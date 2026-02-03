@@ -110,17 +110,6 @@ body {
   background: #c8a96a;
   color: #0e0e0e;
   text-decoration: none;
-  font-size: 0.9rem;
-}
-
-/* BANNER */
-.banner {
-  background: #111;
-  text-align: center;
-  padding: 30px;
-  letter-spacing: 3px;
-  font-size: 0.75rem;
-  color: #c8a96a;
 }
 
 /* SERVICES */
@@ -128,10 +117,13 @@ body {
   padding: 140px 60px;
 }
 
-.services h2 {
+.services h2,
+.why h2,
+.booking h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  margin-bottom: 80px;
+  font-size: 2.6rem;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .cards {
@@ -143,29 +135,28 @@ body {
   background: linear-gradient(145deg, #141414, #0b0b0b);
   padding: 60px;
   border-radius: 30px;
-  transition: transform 0.4s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
 }
 
 .card h3 {
   font-family: 'Playfair Display', serif;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* EXPERIENCE */
-.experience {
-  background: url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9") center/cover fixed;
-  padding: 160px 60px;
+/* WHY */
+.why {
+  padding: 140px 40px;
+  text-align: center;
 }
 
-.exp-text {
+.why ul {
+  list-style: none;
   max-width: 600px;
-  background: rgba(14,14,14,0.7);
-  padding: 60px;
-  border-radius: 30px;
+  margin: auto;
+}
+
+.why li {
+  margin-bottom: 18px;
+  opacity: 0.85;
 }
 
 /* BOOKING */
@@ -174,14 +165,9 @@ body {
   text-align: center;
 }
 
-.booking h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
-}
-
 .booking-sub {
   max-width: 600px;
-  margin: 30px auto 60px;
+  margin: 0 auto 50px;
   opacity: 0.8;
 }
 
@@ -213,6 +199,3 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
-
