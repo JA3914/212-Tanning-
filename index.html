@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- v2 motion -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,27 +19,79 @@
     <div class="hero-overlay"></div>
     <div class="hero-content fade">
       <span class="eyebrow">Miami Luxury Tanning Studio</span>
-      <h1>Your Glow,<br>Reimagined.</h1>
+      <h1>Luxury Tanning.<br>Elevated Glow.</h1>
       <p>
-        A private, high-end tanning experience designed for confidence,
-        elegance, and flawless results.
+        Premium tanning services designed for a flawless, natural finish.
       </p>
-      <a href="#booking" class="cta glow">Availability Request</a>
+      <a href="#booking" class="cta glow">Book Your Session</a>
     </div>
   </section>
 
-  <!-- BANNER -->
-  <section class="banner fade">
-    <p>By Appointment Only • Private Sessions • Premium Equipment</p>
-  </section>
-
   <!-- SERVICES -->
-  <section class="services fade">
-    <h2>Signature Services</h2>
+  <section id="services" class="services fade">
+    <h2>Our Services</h2>
     <div class="cards">
       <div class="card">
-        <h3>Custom Spray Tan</h3>
-        <p>Individually blended tones for a natural, even glow.</p>
+        <h3>Spray Tan</h3>
+        <p>Custom, streak-free glow tailored to your skin tone.</p>
       </div>
       <div class="card">
+        <h3>UV Tanning</h3>
+        <p>Premium beds for an even, consistent tan.</p>
+      </div>
+      <div class="card">
+        <h3>Express Glow</h3>
+        <p>Fast, efficient sessions for busy schedules.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- WHY -->
+  <section class="why fade">
+    <h2>Why 212 Tanning</h2>
+    <ul>
+      <li>Professional-grade tanning equipment</li>
+      <li>Private, sanitized luxury rooms</li>
+      <li>Customized glow matching</li>
+      <li>High-end skincare products only</li>
+    </ul>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="booking fade">
+    <h2>Book Your Appointment</h2>
+    <p class="booking-sub">
+      All sessions are private, sanitized, and professionally prepared.
+    </p>
+
+    <div class="booking-box">
+      <iframe
+        src="https://calendly.com/your-booking-link"
+        title="Booking">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer fade">
+    <p>© 212 Tanning — Luxury Tanning Studio</p>
+  </footer>
+
+  <!-- SCROLL FADE (SAFE, RELIABLE) -->
+  <script>
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
