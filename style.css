@@ -1,4 +1,4 @@
-/* FONTS & BASE */
+/* BASE */
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ body {
   transform: translateY(0);
 }
 
-/* NAV */
+/* NAVIGATION */
 .nav {
   position: fixed;
   top: 0;
@@ -45,18 +45,18 @@ body {
   border-radius: 40px;
   text-decoration: none;
   color: #c8a96a;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .nav-btn:hover {
-  box-shadow: 0 0 18px rgba(200,169,106,0.6);
   transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(200,169,106,0.6);
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1600180758895-3f4b8ecbbf7b') center/cover no-repeat;
+  min-height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?tanning,luxury') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -181,8 +181,8 @@ body {
 
 /* EXPERIENCE IMAGE */
 .experience {
-  height: 600px;
-  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover no-repeat;
+  min-height: 600px;
+  background: url('https://source.unsplash.com/1600x900/?luxury,tanning') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -246,6 +246,3 @@ body {
   color: #c8a96a;
   opacity: 0.8;
 }
-
-
-
