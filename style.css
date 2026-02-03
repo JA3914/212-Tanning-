@@ -1,0 +1,118 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background-color: #f7f5f2;
+  color: #1c1c1c;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* SECTIONS */
+section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.primary {
+  background: #1c1c1c;
+  color: #ffffff;
+}
+
+.outline {
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+}
+
+/* SERVICES */
+.services h2,
+.why h2,
+.booking h2 {
+  font-size: 2.2rem;
+  margin-bottom: 60px;
+}
+
+.service-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 24px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* WHY */
+.why ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why li {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* BOOKING */
+.booking iframe {
+  width: 100%;
+  max-width: 650px;
+  height: 600px;
+  border: none;
+  margin-top: 40px;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
