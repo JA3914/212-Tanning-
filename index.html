@@ -67,12 +67,28 @@
     </div>
   </section>
 
-  <!-- BOOKING -->
-  <section id="book" class="booking fade">
-    <h2>Book Your Appointment</h2>
-    <p class="booking-sub">All sessions are private, sanitized, and professionally prepared.</p>
-    <div class="booking-box">
-      <iframe src="https://calendly.com/your-booking-link" title="Booking"></iframe>
+  <section id="booking">
+  <h2>Book Your Appointment</h2>
+
+  <form
+    action="https://formsubmit.co/YOUR_EMAIL"
+    method="POST"
+    class="booking-form"
+  >
+    <input type="hidden" name="_subject" value="New 212 Tanning Booking">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="service" placeholder="Service">
+    <input type="text" name="date" placeholder="Preferred Date & Time">
+    <textarea name="message" placeholder="Notes"></textarea>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+</section>
+
+     
     </div>
   </section>
 
